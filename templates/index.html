@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Select ML Model</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="model-container">
+      <h2>Select a Machine Learning Model</h2>
+      <form action="/model" method="POST">
+        <select name="model" required>
+          <option value="" disabled selected>Select a model</option>
+          <option value="VGG16">Model 1 - VGG16</option>
+          <option value="VGG19">Model 2 - VGG19</option>
+          <option value="Resnet50">Model 3 - Resnet50</option>
+          <option value="InceptionV3">Model 4 - InceptionV3</option>
+        </select>
+        <input type="submit" value="Continue" />
+      </form>
+      <div class="footer">Choose the model before uploading your image</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='/styles/result.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>RESULT</h2>
+      <div>
+        <img
+          src="{{ url_for('static', filename='uploads/' + filename) }}"
+          alt="Uploaded Image"
+          height="250px"
+        />
+        <div class="result">
+          <h2>{{data}}</h2>
+        </div>
+        <form action="{{ url_for('clear_uploads') }}" method="POST">
+          <input type="submit" value="Upload more" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

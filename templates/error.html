@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Model Selection</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='/styles/error.css')}}"
+    />
+  </head>
+  <body>
+    <div class="message-box">
+      <h2>Invalid Selection</h2>
+      <p>
+        <span class="unknown">{{model}}</span> is not a recognized model.<br />
+        Available models are:
+        <span class="models-list">
+          <a href="/VGG16/upload">VGG16</a>, <a href="/VGG19/upload">VGG19</a>,
+          <a href="/Resnet50/upload">Resnet50</a>,
+          <a href="/InceptionV3/upload">InceptionV3</a></span
+        >.
+      </p>
+    </div>
+  </body>
+</html>
