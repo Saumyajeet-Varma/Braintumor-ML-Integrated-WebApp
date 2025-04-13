@@ -5,11 +5,15 @@
     <title>Upload Image</title>
     <link
       rel="stylesheet"
+      href="{{url_for('static', filename='styles/global.css')}}"
+    />
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='styles/upload.css') }}"
     />
   </head>
   <body>
-    <div class="upload-container">
+    <div class="container">
       <h2>Upload an Image</h2>
       <form
         action="/{{model}}/predict"

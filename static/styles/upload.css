@@ -1,27 +1,3 @@
-body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.upload-container {
-    background-color: #fff;
-    padding: 2rem 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 400px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
 .custom-file-input {
     display: inline-block;
     padding: 15px 50px;
@@ -55,10 +31,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #218838;
-}
-
-.footer {
-    margin-top: 1.5rem;
-    font-size: 0.85rem;
-    color: #888;
 }

@@ -5,11 +5,15 @@
     <title>Model Selection</title>
     <link
       rel="stylesheet"
+      href="{{url_for('static', filename='styles/global.css')}}"
+    />
+    <link
+      rel="stylesheet"
       href="{{url_for('static', filename='/styles/error.css')}}"
     />
   </head>
   <body>
-    <div class="message-box">
+    <div class="container">
       <h2>Invalid Selection</h2>
       <p>
         <span class="unknown">{{model}}</span> is not a recognized model.<br />

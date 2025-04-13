@@ -5,11 +5,15 @@
     <title>Select ML Model</title>
     <link
       rel="stylesheet"
+      href="{{url_for('static', filename='styles/global.css')}}"
+    />
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='styles/style.css') }}"
     />
   </head>
   <body>
-    <div class="model-container">
+    <div class="container">
       <h2>Select a Machine Learning Model</h2>
       <form action="/model" method="POST">
         <select name="model" required>

@@ -6,6 +6,10 @@
     <title>Document</title>
     <link
       rel="stylesheet"
+      href="{{url_for('static', filename='styles/global.css')}}"
+    />
+    <link
+      rel="stylesheet"
       href="{{url_for('static', filename='/styles/result.css')}}"
     />
   </head>
@@ -13,11 +17,13 @@
     <div class="container">
       <h2>RESULT</h2>
       <div>
-        <img
-          src="{{ url_for('static', filename='uploads/' + filename) }}"
-          alt="Uploaded Image"
-          height="250px"
-        />
+        <div class="img-container">
+          <img
+            src="{{ url_for('static', filename='uploads/' + filename) }}"
+            alt="Uploaded Image"
+            height="250px"
+          />
+        </div>
         <div class="result">
           <h2>{{data}}</h2>
         </div>
