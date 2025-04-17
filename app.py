@@ -54,6 +54,20 @@ def allowed_file(filename):
 
 @app.route('/')
 def index():
+    folder = app.config['UPLOAD_FOLDER']
+
+    for filename in os.listdir(folder):
+        if filename == '.gitkeep':
+            continue
+
+        file_path = os.path.join(folder, filename)
+        
+        try:
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+        except Exception as e:
+            print(f"Error deleting file {file_path}: {e}")
+            
     return render_template('index.html')
 
 @app.route('/model', methods=['POST'])
@@ -99,22 +113,8 @@ def predict(model):
 
     return render_template('result.html', data=data, filename=filename)
 
-@app.route('/clear', methods=['POST'])
-def clear_uploads():
-    folder = app.config['UPLOAD_FOLDER']
-
-    for filename in os.listdir(folder):
-        if filename == '.gitkeep':
-            continue
-
-        file_path = os.path.join(folder, filename)
-        
-        try:
-            if os.path.isfile(file_path):
-                os.remove(file_path)
-        except Exception as e:
-            print(f"Error deleting file {file_path}: {e}")
-    
+@app.route('/again', methods=['POST'])
+def upload_again():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
