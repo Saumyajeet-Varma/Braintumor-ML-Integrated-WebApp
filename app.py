@@ -82,8 +82,12 @@ def upload(model):
     
     return render_template('upload.html', model=model)
 
-@app.route('/<model>/predict', methods=['POST'])
+@app.route('/<model>/predict', methods=['GET', 'POST'])
 def predict(model):
+    if request.method == 'GET':
+        if model not in models:
+            return render_template('error.html', model=model)
+    
     if 'image' not in request.files:
         return "No file part"
 
