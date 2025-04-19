@@ -1,7 +1,7 @@
 # Braintumor-ML-Integrated-WebApp
 
 Brain Tumor Detection using Transfer Learning Models and Flask Web Application. <br>
-Brain Tumor Detection using Transfer Learning Models and Flask Web Application <br>
+A Comparative Deep Learning-Based Approach Using VGG16, VGG19, ResNet50, and InceptionV3. <br>
 
 This project proposes an end-to-end brain tumor classification system using deep learning models integrated within a Flask-based web application. The project leverages the power of transfer learning through four prominent CNN architectures: VGG16, VGG19, ResNet50, and InceptionV3. These models are trained on a labeled dataset of brain MRI images to classify them into four categories: glioma, meningioma, pituitary tumor, and no tumor. The final system allows users to upload an image and get real-time predictions. The project aims to support radiologists and healthcare professionals in making fast and accurate diagnostic decisions. <br>
 
@@ -19,7 +19,7 @@ Deep learning provides powerful techniques for medical image analysis. Automatin
 
 ```md
 Directory structure:
-└── braintumor-ml-integrated-webapp/
+└── saumyajeet-varma-braintumor-ml-integrated-webapp/
     ├── README.md
     ├── app.py
     ├── requirements.txt
@@ -28,6 +28,8 @@ Directory structure:
     │   ├── resnet50_model.h5
     │   ├── vgg16_model.h5
     │   └── vgg19_model.h5
+    ├── README-Images/
+    ├── Sample-Images/
     ├── static/
     │   ├── scripts/
     │   │   └── upload.js
@@ -73,25 +75,5 @@ Route - '/`<model>`/predict' <br>
 
 ### Contributors
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Saumyajeet-Varma">
-        <img src="https://avatars.githubusercontent.com/Saumyajeet-Varma" width="80" height="80" style="border-radius:50%" alt="Saumyajeet Varma"/>
-        <br /><sub><b>Saumyajeet Varma</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Samal-Ayush">
-        <img src="https://avatars.githubusercontent.com/Samal-Ayush" width="80" height="80" style="border-radius:50%" alt="Samal Ayush"/>
-        <br /><sub><b>Samal Ayush</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/SwedeshnaMishra">
-        <img src="https://avatars.githubusercontent.com/SwedeshnaMishra" width="80" height="80" style="border-radius:50%" alt="Swedeshna Mishra"/>
-        <br /><sub><b>Swedeshna Mishra</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/Saumyajeet-Varma"><img src="https://contrib.rocks/image?repo=Saumyajeet-Varma/Braintumor-ML-Integrated-WebApp" /></a>
+
