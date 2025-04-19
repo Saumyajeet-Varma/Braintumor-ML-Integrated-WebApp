@@ -60,23 +60,38 @@ Directory structure:
 
 ## Flask routes and webpages
 
-Route - '/'
+Route - '/' <br>
 ![Route - '/'](./README-Images/index.png)
 
-Route - '/`<model>`/upload'
+Route - '/`<model>`/upload' <br>
 ![Route - '/<model>/upload'](./README-Images/upload.png)
 
-Route - '/`<model>`/predict'
+Route - '/`<model>`/predict' <br>
 ![Route - '/<model>/predict'](./README-Images//result.png)
 
 > model in URL is variable, it can be VGG16, VGG19, ResNet50, InceptionV3
 
-## Contributors
+### Contributors
 
-<div style="display:flex; gap:5px; margin:5px">
-  <a href="https://github.com/Saumyajeet-Varma"><img src="https://avatars.githubusercontent.com/Saumyajeet-Varma" alt="Saumyajeet Varma" width="60px" style="border-radius:50%" /></a>
-
-  <a href="https://github.com/Samal-Ayush"><img src="https://avatars.githubusercontent.com/Samal-Ayush" alt="Saumyajeet Varma" width="60px" style="border-radius:50%" /></a>
-
-  <a href="https://github.com/SwedeshnaMishra"><img src="https://avatars.githubusercontent.com/SwedeshnaMishra" alt="Saumyajeet Varma" width="60px" style="border-radius:50%" /></a>
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Saumyajeet-Varma">
+        <img src="https://avatars.githubusercontent.com/Saumyajeet-Varma" width="80" height="80" style="border-radius:50%" alt="Saumyajeet Varma"/>
+        <br /><sub><b>Saumyajeet Varma</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Samal-Ayush">
+        <img src="https://avatars.githubusercontent.com/Samal-Ayush" width="80" height="80" style="border-radius:50%" alt="Samal Ayush"/>
+        <br /><sub><b>Samal Ayush</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SwedeshnaMishra">
+        <img src="https://avatars.githubusercontent.com/SwedeshnaMishra" width="80" height="80" style="border-radius:50%" alt="Swedeshna Mishra"/>
+        <br /><sub><b>Swedeshna Mishra</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
