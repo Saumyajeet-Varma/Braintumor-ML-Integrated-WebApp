@@ -62,13 +62,13 @@ Directory structure:
 
 ## Flask routes and webpages
 
-Route - '/' <br>
+#### Route - '/'
 ![Route - '/'](./README-Images/index.png)
 
-Route - '/`<model>`/upload' <br>
+#### Route - '/`<model>`/upload'
 ![Route - '/<model>/upload'](./README-Images/upload.png)
 
-Route - '/`<model>`/predict' <br>
+#### Route - '/`<model>`/predict'
 ![Route - '/<model>/predict'](./README-Images//result.png)
 
 > model in URL is variable, it can be VGG16, VGG19, ResNet50, InceptionV3
